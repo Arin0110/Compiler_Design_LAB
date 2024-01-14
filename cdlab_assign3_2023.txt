@@ -1,0 +1,19 @@
+Consider the following grammar 
+E->E+T|T
+T->T*F|F
+F->(E)|i
+Write C programs to the following 
+1. Construct an operator precedence parser.
+2. Construct a shift-reduce parser.
+The programs will display the derivation of an input string 
+and finally report its acceptance or error.
+
+Input1:  (i+i)*i$
+Output1: accept
+
+Input2:  (i+i*i$
+Output2: Error: closing parenthesis missing at position 5
+
+Input3:  +i*i$
+Output3: Error: operand missing before + at position 1
+
